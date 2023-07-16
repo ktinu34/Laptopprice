@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Prediction</title>
+</head>
+
+<body >
+    <style>
+        /* <img src="{{ url_for('static', filename='image.png') }}"> */
+        body {
+          background-image: url('laptop1.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: auto;
+          background-position: right center;
+        }
+        
+        </style>
+    <!-- <img src="laptop.jpg" alt="Laptop" > -->
+
+    <h1> Laptop Price Prediction </h1>
+    <form method="POST" action="/price">
+
+
+        <label>Brand :</label>
+        <select name = "brand">
+            <option value = "ASUS">ASUS</option>
+            <option value = "DELL">DELL</option>
+            <option value = "Lenovo">Lenovo</option>
+            <option value = "HP">HP</option>
+            <option value = "acer">acer</option>
+            <option value = "MSI">MSI</option>
+            <option value = "APPLE">APPLE</option>
+
+            <option value = "Avita">Avita</option>
+        </select>
+
+
+ 
+
+        <br>
+        <br>
+
+        <label>Processor's Brand :</label>
+        <select name = "processor_brand">
+            <option value = "Intel">Intel</option>
+            <option value = "AMD">AMD</option>
+            <option value = "M1">M1</option>
+        </select>
+
+        <br>
+        <br>
+
+
+
+        <label>Processor Name:</label>
+        <select name = "processor_name">
+            <option value = "Core i9">Core i9</option>
+            <option value = "Core i7">Core i7</option>
+            <option value = "Core i5">Core i5</option>
+            <option value = "Core i3">Core i3</option>
+            <option value = "Celeron Dual">Celeron Dual</option>
+            <option value = "Pentium Quad">Pentium Quad</option>
+
+
+            <option value = "Ryzen 9">Ryzen 9</option>
+            <option value = "Ryzen 7">Ryzen 7</option>
+
+            <option value = "Ryzen 5">Ryzen 5</option>
+            <option value = "Ryzen 3">Ryzen 3</option>
+            <option value = "M1">M1</option>
+            
+           
+           
+
+        </select>
+        
+        <br>
+        <br>
+
+        <label>Processor Generation :</label>
+        <select name = "processor_gnrtn">
+            <option value = "12th">12th</option>
+            <option value = "11th">11th</option>
+            <option value = "10th">10th</option>
+            <option value = "9th">9th</option>
+            <option value = "8th">8th</option>
+            <option value = "7th">7th</option>
+            <option value = "6th">6th</option>
+            <option value = "5th">5th</option>
+            <option value = "4th">4th</option>
+            <option value = "Not Available">Not Available</option>
+
+        </select>
+
+
+        <br>
+        <br>
+
+
+        <label>Ram memory :</label>
+        <select name = "ram_gb">
+            <option value = "32 GB">32 GB</option>
+            <option value = "16 GB">16 GB</option>
+            <option value = "8 GB">8 GB</option>
+            <option value = "4 GB">4 GB</option>
+
+        </select>
+
+        
+        <br>
+        <br>
+
+        <label>Ram type :</label>
+        <select name = "ram_type">
+            <option value = "DDR4">DDR4</option>
+            <option value = "LPDDR4X">LPDDR4X</option>
+
+            <option value = "LPDDR4">LPDDR4</option>
+
+            <option value = "LPDDR3">LPDDR3</option>
+
+            <option value = "DDR5">DDR5</option>
+
+            <option value = "DDR3">DDR3</option>
+
+        </select>
+
+        <br>
+        <br>
+
+        <label> SSD :</label>
+        <select name = "ssd">
+
+            <option value = "0 GB">0 GB</option>
+            <option value = "128 GB">128 GB</option>
+            <option value = "512 GB">512 GB</option>
+            <option value = "256 GB">256 GB</option>
+            <option value = "1024 GB">1024 GB</option>
+            <option value = "2048 GB">2048 GB</option>
+            <option value = "3072 GB">3072 GB</option>     
+        </select>          
+        
+     
+
+        <br>
+        <br>
+
+        <label>HDD :</label>
+        <select name = "hdd">
+            <option value = "0 GB">0 GB</option>
+            
+            <option value = "512 GB">512 GB</option>
+
+           
+            <option value = "1024 GB">1024 GB</option>
+            <option value = "2048 GB">2048 GB</option>
+        </select>
+           
+        <br>
+        <br>
+
+
+        <label>operating System :</label>
+        <select name = "os">
+            <option value = "Windows">Windows</option>
+            <option value = "Mac">Mac</option>
+            <option value = "DOS">DOS</option>
+
+            <option value = "linx">linx</option>
+            
+        </select>
+
+        <br>
+        <br>
+            
+       
+
+
+        <label>OS bit:</label>
+        <label>32-bit:</label> <input type = "radio" name= "os_bit" value = "32-bit">
+        <label>64-bit:</label> <input type = "radio" name= "os_bit" value = "64-bit">
+
+       
+        <br>
+        <br>
+
+        <label>Grabhic Card :</label>
+        <select name = "graphic_card_gb">
+            <option value = "0 GB">0 GB</option>
+            <option value = "2 GB">2 GB</option>
+            <option value = "4 GB">4 GB</option>
+
+            <option value = "6 GB">6 GB</option>
+            <option value = "8 GB">8 GB</option>
+        </select>
+        
+        <br>
+        <br>
+
+        <label>Weight</label>
+        <label>Casual</label> <input type = "radio" name= "weight" value = "Casual">
+        <label>ThinNlight</label> <input type = "radio" name= "weight" value = "ThinNlight">
+        <label>Gaming</label> <input type = "radio" name= "weight" value = "Gaming">
+
+        
+
+        <br>
+        <br>
+
+        <label>Warranty :</label>
+        <select name = "warranty">
+            <option value = "1 year">1 year</option>
+            <option value = "2 years">2 years</option>
+            <option value = "3 years">3 years</option>
+            <option value = "No warranty">No warranty</option>
+            
+        </select>
+
+        <br>
+        <br>
+
+        <label>Touchscreen:</label>
+        <label>Yes:</label> <input type = "radio" name= "Touchscreen" value = "Yes">
+        <label>No:</label> <input type = "radio" name= "Touchscreen" value = "No">
+
+        <br>
+        <br>
+
+        <label>MS Office:</label>
+        <label>Yes:</label> <input type = "radio" name= "msoffice" value = "Yes">
+        <label>No:</label> <input type = "radio" name= "msoffice" value = "No">
+
+        <br>
+        <br>
+
+        <label>Ratings :</label>
+        <select name = "rating">
+            <option value = "1 star">1 star</option>
+            <option value = "2 stars">2 stars</option>
+            <option value = "3 stars">3 stars</option>
+
+            <option value = "4 stars">4 stars</option>
+
+            <option value = "5 stars">5 stars</option>
+            
+        </select>
+
+
+        <br>
+        <br>
+
+
+
+        <label>Number of Ratings:</label>
+        <input type = "number" name = "Number_of_Ratings" placeholder="Number of Ratings" required>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Number of Reviews:</label>
+        <input type = "number" name = "Number_of_Reviews" placeholder="Number of reviews" required>
+        </select>
+
+        <br>
+        <br>
+
+        
+
+        
+
+        
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <h4><strong>Laptop price for the selected configuration is  <b> {{ prediction }}  Rs.</b> Only </strong></h4>
+
+
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "163abe4f-6f1c-4833-978d-2a4c85d9836f",
+		"name": "Laptop_price",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28221705"
+	},
+	"item": [
+		{
+			"name": "http://192.168.222.214:8080/laptop_price",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "processor_name",
+							"value": "Core i3",
+							"type": "text"
+						},
+						{
+							"key": "processor_gnrtn",
+							"value": "10th",
+							"type": "text"
+						},
+						{
+							"key": "ram_gb",
+							"value": "4 GB",
+							"type": "text"
+						},
+						{
+							"key": "ram_type",
+							"value": "DDR4",
+							"type": "text"
+						},
+						{
+							"key": "ssd",
+							"value": "512 GB",
+							"type": "text"
+						},
+						{
+							"key": "hdd",
+							"value": "0 GB",
+							"type": "text"
+						},
+						{
+							"key": "os",
+							"value": "DOS",
+							"type": "text"
+						},
+						{
+							"key": "os_bit",
+							"value": "64-bit",
+							"type": "text"
+						},
+						{
+							"key": "graphic_card_gb",
+							"value": "0 GB",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "Casual",
+							"type": "text"
+						},
+						{
+							"key": "warranty",
+							"value": "No warranty",
+							"type": "text"
+						},
+						{
+							"key": "Touchscreen",
+							"value": "No",
+							"type": "text"
+						},
+						{
+							"key": "msoffice",
+							"value": "Yes",
+							"type": "text"
+						},
+						{
+							"key": "rating",
+							"value": "2 stars",
+							"type": "text"
+						},
+						{
+							"key": "Number_of_Ratings",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "number_of_Reviews",
+							"value": "40",
+							"type": "text"
+						},
+						{
+							"key": "brand",
+							"value": "ASUS",
+							"type": "text"
+						},
+						{
+							"key": "processor_brand",
+							"value": "AMD",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.222.214:8080/laptop_price",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"222",
+						"214"
+					],
+					"port": "8080",
+					"path": [
+						"laptop_price"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
